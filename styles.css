@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: radial-gradient(circle at 50% 50%, #ff0000, #0000ff);
+    animation: lavaLamp 20s infinite;
+}
+
+.dj-container {
+    position: relative;
+    width: 400px; /* Adjust as necessary */
+    height: 200px; /* Adjust as necessary */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.dj-deck {
+    width: 800px; /* Adjust as necessary */
+    height: 800px; /* Adjust as necessary */
+    background: url('images/dj-decks-background.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+}
+
+.spinning-deck {
+    width: 220px; /* Adjust as necessary */
+    height: 220px; /* Adjust as necessary */
+    background: url('images/dj-decks-1.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    animation: rotate 4s linear infinite;
+    transform-origin: center;
+}
+
+.deck1 {
+    top: -40px; /* Adjust as necessary */
+    left: -350px; /* Adjust as necessary */
+}
+
+.deck2 {
+    top: -40px; /* Adjust as necessary */
+    right: 55px; /* Adjust as necessary */
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -2px;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    animation: moveText 5s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translate(-50%, -50%) translateX(-50vw) translateY(-50vh);
+    }
+    25% {
+        transform: translate(-50%, -50%) translateX(50vw) translateY(-50vh);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateX(50vw) translateY(50vh);
+    }
+    75% {
+        transform: translate(-50%, -50%) translateX(-50vw) translateY(50vh);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(-50vw) translateY(-50vh);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes lavaLamp {
+    0% {
+        background: radial-gradient(circle at 50% 50%, #ff0000, #0000ff);
+    }
+    25% {
+        background: radial-gradient(circle at 70% 30%, #00ff00, #ff00ff);
+    }
+    50% {
+        background: radial-gradient(circle at 30% 70%, #ffff00, #00ffff);
+    }
+    75% {
+        background: radial-gradient(circle at 80% 20%, #ff8000, #8000ff);
+    }
+    100% {
+        background: radial-gradient(circle at 50% 50%, #ff0000, #0000ff);
+    }
+}
