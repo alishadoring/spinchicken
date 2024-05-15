@@ -88,7 +88,7 @@ body {
         transform: rotate(360deg);
     }
 }
- 
+
 @keyframes lavaLamp {
     0% {
         background: radial-gradient(circle at 50% 50%, #ff0000, #0000ff);
