@@ -56,7 +56,7 @@ body {
 .text {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: -5px;
-    font-size: 150px;
+    font-size: 100px;
     font-weight: bold;
     color: white;
     animation: moveText 5s linear infinite;
