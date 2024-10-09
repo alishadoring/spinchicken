@@ -109,14 +109,14 @@ body {
 
 .links {
     position: absolute; /* Position the links div */
-    bottom: 20px; /* Adjust as needed */
+    bottom: 0px; /* Adjust as needed */
     left: 95%; /* Center the link horizontally */
     transform: translateX(-95%); /* Adjust for centering */
 }
 
 .brat-image {
-    width: 20px; /* Adjust size as needed */
-    height: auto; /* Keep aspect ratio */
+    width: 70px; /* Adjust size as needed */
+    height: 70px; /* Keep aspect ratio */
     cursor: pointer; /* Makes the image look like a button on hover */
     display: block; /* Ensures the image fills the anchor tag */
 }
