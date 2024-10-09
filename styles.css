@@ -115,8 +115,8 @@ body {
 }
 
 .brat-image {
-    width: 200px; /* Adjust size as needed */
-    height: 200px; /* Keep aspect ratio */
+    width: 400px; /* Adjust size as needed */
+    height: 400px; /* Keep aspect ratio */
     cursor: pointer; /* Makes the image look like a button on hover */
     display: block; /* Ensures the image fills the anchor tag */
 }
