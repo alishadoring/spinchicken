@@ -106,3 +106,27 @@ body {
         background: radial-gradient(circle at 50% 50%, #ff0000, #0000ff);
     }
 }
+
+.links {
+    position: absolute; /* Position the links div */
+    bottom: 20px; /* Adjust as needed */
+    left: 95%; /* Center the link horizontally */
+    transform: translateX(-95%); /* Adjust for centering */
+}
+
+.brat-image {
+    width: 70px; /* Adjust size as needed */
+    height: auto; /* Keep aspect ratio */
+    cursor: pointer; /* Makes the image look like a button on hover */
+    display: block; /* Ensures the image fills the anchor tag */
+}
+
+.links a {
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure the a tag behaves like a block container for the image */
+}
+
+.brat-image:hover {
+    transform: scale(1.1); /* Makes the image grow slightly on hover */
+    transition: transform 0.2s;
+}
